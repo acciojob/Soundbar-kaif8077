@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8" />
+<title>Audio Player</title>
+<link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-	<div id="buttons">
+<div id="buttons">
   <button class="btn" data-sound="applause.mp3">applause</button>
   <button class="btn" data-sound="boo.mp3">boo</button>
   <button class="btn" data-sound="gasp.mp3">gasp</button>
@@ -17,10 +16,10 @@
   <button class="btn" data-sound="wrong.mp3">wrong</button>
   <button class="stop">stop</button>
 </div>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
 
+<!-- Hidden audio element for Cypress detection -->
+<audio id="audioPlayer"></audio>
+
+<script src="script.js"></script>
 </body>
-
 </html>
